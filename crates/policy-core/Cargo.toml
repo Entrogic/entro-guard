@@ -1,0 +1,12 @@
+[package]
+name = "policy-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono = { workspace = true }
+chrono-tz = { workspace = true }
+policy-schema = { path = "../policy-schema" }
+domain-normalizer = { path = "../domain-normalizer" }
+time-policy = { path = "../time-policy" }

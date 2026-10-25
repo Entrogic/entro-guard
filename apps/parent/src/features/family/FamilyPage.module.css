@@ -1,0 +1,123 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.memberList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.memberRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.memberEmail {
+  font-weight: 600;
+  font-size: 13.5px;
+}
+
+.memberMeta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.roleOwner,
+.roleGuardian {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.roleOwner {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.roleGuardian {
+  background: #eef0f5;
+  color: var(--text-muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.stat {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.statWarn {
+  color: var(--warn);
+}
+
+.statLabel {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.lastSync {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.createWrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.createCard {
+  width: 100%;
+  max-width: 460px;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.inviteForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.inviteForm .input {
+  width: 240px;
+}
+
+.inviteNote {
+  font-size: 12px;
+  color: var(--text-muted);
+}

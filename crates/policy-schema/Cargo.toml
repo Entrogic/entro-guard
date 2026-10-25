@@ -1,0 +1,13 @@
+[package]
+name = "policy-schema"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+chrono-tz = { workspace = true }
+domain-normalizer = { path = "../domain-normalizer" }
+time-policy = { path = "../time-policy" }

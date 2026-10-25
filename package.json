@@ -1,0 +1,13 @@
+{
+  "name": "entrouguard-family",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "parent:dev": "pnpm --filter @entrouguard/parent tauri dev",
+    "parent:build": "pnpm --filter @entrouguard/parent tauri build",
+    "parent:web": "pnpm --filter @entrouguard/parent dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4"
+  }
+}
